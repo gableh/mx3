@@ -25,6 +25,8 @@
 			   method: :delete,
 			   data: { confirm: 'Are you sure?' } %>
 	</p>
+	<td><%= link_to 'Edit',edit_list_task_path(:list_id => @list.id ,:id=> task.id) %></td>
+      </tr>
 <% end %>
 
 <h2>Add a todo item:</h2>
